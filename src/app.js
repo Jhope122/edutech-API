@@ -1,9 +1,17 @@
-export function authMiddleware(req, res, next) {
-  const token = req.headers.authorization;
+import express from "express";
+import alunosRoutes from "./routes/alunos.js";
+import cursosRoutes from "./routes/cursos.js";
+import matriculasRoutes from "./routes/matriculas.js";
 
-  if (token === "123456") {
-    next();
-  } else {
-    res.status(401).json({ erro: "Acesso não autorizado" });
-  }
-}
+const app = express();
+app.use(express.json());
+
+app.get("/", (req, res) => {
+  res.send("API Edutech está funcionando");
+});
+
+app.use("/alunos", alunosRoutes);
+app.use("/cursos", cursosRoutes);
+app.use("/matriculas", matriculasRoutes);
+
+app.listen(3000, () => console.log("Servidor rodando na porta 3000"));
