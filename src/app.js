@@ -1,9 +1,13 @@
+import dotenv from "dotenv";
+dotenv.config();
+
 import express from "express";
 import alunosRoutes from "./routes/alunos.js";
 import cursosRoutes from "./routes/cursos.js";
 import matriculasRoutes from "./routes/matriculas.js";
 
 const app = express();
+
 app.use(express.json());
 
 app.get("/", (req, res) => {
@@ -14,4 +18,8 @@ app.use("/alunos", alunosRoutes);
 app.use("/cursos", cursosRoutes);
 app.use("/matriculas", matriculasRoutes);
 
-app.listen(3000, () => console.log("Servidor rodando na porta 3000"));
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`Servidor rodando na porta ${PORT}`);
+});

@@ -1,11 +1,11 @@
 import { cursos } from "../model/database.js";
 
-// LISTAR TODOS
+
 export function listarCursos(req, res) {
   res.json(cursos);
 }
 
-// PEGAR POR ID
+
 export function pegarCursoPorId(req, res) {
   const id = req.params.id;
   const curso = cursos.find(c => c && c.id === id);
@@ -17,14 +17,13 @@ export function pegarCursoPorId(req, res) {
   res.json(curso);
 }
 
-// CRIAR
+
 export function criarCurso(req, res) {
   const novoCurso = req.body;
   cursos.push(novoCurso);
   res.status(201).json(novoCurso);
 }
 
-// ATUALIZAR
 export function atualizarCurso(req, res) {
   const id = req.params.id;
   const index = cursos.findIndex(c => c && c.id === id);
@@ -37,7 +36,6 @@ export function atualizarCurso(req, res) {
   res.json(cursos[index]);
 }
 
-// DELETAR
 export function deletarCurso(req, res) {
   const id = req.params.id;
   const index = cursos.findIndex(c => c && c.id === id);
