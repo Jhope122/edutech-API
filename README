@@ -1,6 +1,6 @@
-#  API EduTech – Gestão de Alunos, Cursos e Matrículas 📚
+# API EduTech – Gestão de Alunos, Cursos e Matrículas 📚
 
-##  Sobre o Projeto 📌
+## Sobre o Projeto 📌
 
 Esta é uma API REST desenvolvida com **Node.js** e **Express**, simulando o funcionamento de uma plataforma educacional (EdTech).
 
@@ -23,7 +23,7 @@ Este projeto simula esse cenário.
 
 ---
 
-##  Arquitetura 🏗
+## Arquitetura 🏗
 
 A API foi estruturada seguindo o padrão **MVC (Model-View-Controller)**:
 
@@ -34,7 +34,7 @@ A API foi estruturada seguindo o padrão **MVC (Model-View-Controller)**:
 
 ---
 
-##  Tecnologias Utilizadas 🚀 
+## Tecnologias Utilizadas 🚀 
 
 - Node.js  
 - Express  
@@ -44,7 +44,7 @@ A API foi estruturada seguindo o padrão **MVC (Model-View-Controller)**:
 
 ---
 
-##  Estrutura do Projeto 📂
+## Estrutura do Projeto 📂
 
 src/
 ├── controllers/
@@ -54,7 +54,7 @@ src/
 └── app.js
 ---
 
-##  Como Executar o Projeto ▶️
+## Como Executar o Projeto ▶️
 
 1. Clone o repositório
 2. Instale as dependências:npm install
@@ -65,7 +65,7 @@ TOKEN=defina_um_token_de_sua_preferencia.
 
 ---
 
-##  Rotas da API 🔗
+## Rotas da API 🔗
 
 ### Alunos 👧🏽
 
@@ -77,7 +77,7 @@ TOKEN=defina_um_token_de_sua_preferencia.
 
 ---
 
-###  Cursos 🎓
+### Cursos 🎓
 
 - `GET /cursos` → Lista todos os cursos  
 - `GET /cursos/:id` → Busca curso por ID  
