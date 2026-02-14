@@ -1,0 +1,116 @@
+# 📚 API EduTech – Gestão de Alunos, Cursos e Matrículas
+
+## 📌 Sobre o Projeto
+
+Esta é uma API REST desenvolvida com **Node.js** e **Express**, simulando o funcionamento de uma plataforma educacional (EdTech).
+
+A API permite o gerenciamento de:
+
+- Alunos  
+- Cursos  
+- Matrículas  
+
+O objetivo é aplicar conceitos de backend seguindo boas práticas de arquitetura, organização e segurança.
+
+---
+
+## 🎯 Por que EdTech?
+
+O setor de tecnologia educacional é um dos que mais cresce no mercado atual.  
+Plataformas de ensino precisam de sistemas backend organizados, escaláveis e seguros para gerenciar usuários, cursos e inscrições.
+
+Este projeto simula esse cenário real.
+
+---
+
+## 🏗 Arquitetura
+
+A API foi estruturada seguindo o padrão **MVC (Model-View-Controller)**:
+
+- **Model** → Estrutura de dados (banco mocado em memória)
+- **Controller** → Lógica de negócio
+- **Routes** → Definição das rotas HTTP
+- **Middleware** → Controle de autenticação
+
+Essa separação garante código limpo, organizado e de fácil manutenção.
+
+---
+
+## 🔐 Autenticação
+
+As rotas de criação, atualização e exclusão são protegidas por token.
+
+O token é validado através de variável de ambiente utilizando `dotenv`.
+
+---
+
+## 🚀 Tecnologias Utilizadas
+
+- Node.js  
+- Express  
+- Dotenv  
+- JavaScript (ES Modules)  
+- Nodemon  
+
+---
+
+## 📂 Estrutura do Projeto
+
+src/
+├── controllers/
+├── routes/
+├── model/
+├── middlewares/
+└── app.js
+
+---
+
+## ▶️ Como Executar o Projeto
+
+1. Clone o repositório
+2. Instale as dependências: npm install 
+3. Crie um arquivo `.env` na raiz do projeto:PORT=3000  
+   TOKEN=defina_um_token_de_sua_preferencia
+4. Execute o projeto: npm run dev
+5. Utilize Insomnia ou Postman para testar as rotas.
+
+## 🛠 Tecnologias Utilizadas
+
+- Node.js  
+- Express  
+- Dotenv  
+- Nodemon  
+
+---
+
+## 🔗 Rotas da API
+
+### 📚 Alunos
+
+- `GET /alunos` → Lista todos os alunos  
+- `GET /alunos/:id` → Busca aluno por ID  
+- `POST /alunos` → Cria um novo aluno  
+- `PUT /alunos/:id` → Atualiza um aluno  
+- `DELETE /alunos/:id` → Remove um aluno  
+
+---
+
+### 🎓 Cursos
+
+- `GET /cursos` → Lista todos os cursos  
+- `GET /cursos/:id` → Busca curso por ID  
+- `POST /cursos` → Cria um novo curso  
+- `PUT /cursos/:id` → Atualiza um curso  
+- `DELETE /cursos/:id` → Remove um curso  
+
+---
+
+### 📝 Matrículas
+
+- `GET /matriculas` → Lista todas as matrículas  
+- `GET /matriculas/:id` → Busca matrícula por ID  
+- `POST /matriculas` → Cria uma nova matrícula  
+- `PUT /matriculas/:id` → Atualiza uma matrícula  
+- `DELETE /matriculas/:id` → Remove uma matrícula  
+
+---
