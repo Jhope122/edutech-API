@@ -19,7 +19,7 @@ O objetivo é aplicar conceitos de backend seguindo boas práticas de arquitetur
 O setor de tecnologia educacional é um dos que mais cresce no mercado atual.  
 Plataformas de ensino precisam de sistemas backend organizados, escaláveis e seguros para gerenciar usuários, cursos e inscrições.
 
-Este projeto simula esse cenário real.
+Este projeto simula esse cenário.
 
 ---
 
@@ -31,16 +31,6 @@ A API foi estruturada seguindo o padrão **MVC (Model-View-Controller)**:
 - **Controller** → Lógica de negócio
 - **Routes** → Definição das rotas HTTP
 - **Middleware** → Controle de autenticação
-
-Essa separação garante código limpo, organizado e de fácil manutenção.
-
----
-
-## 🔐 Autenticação
-
-As rotas de criação, atualização e exclusão são protegidas por token.
-
-O token é validado através de variável de ambiente utilizando `dotenv`.
 
 ---
 
@@ -62,24 +52,16 @@ src/
 ├── model/
 ├── middlewares/
 └── app.js
-
 ---
 
 ## ▶️ Como Executar o Projeto
 
 1. Clone o repositório
-2. Instale as dependências: npm install 
-3. Crie um arquivo `.env` na raiz do projeto:PORT=3000  
-   TOKEN=defina_um_token_de_sua_preferencia
+2. Instale as dependências:npm install
+3. Crie um arquivo `.env` na raiz do projeto: PORT=3000
+TOKEN=defina_um_token_de_sua_preferencia.
 4. Execute o projeto: npm run dev
 5. Utilize Insomnia ou Postman para testar as rotas.
-
-## 🛠 Tecnologias Utilizadas
-
-- Node.js  
-- Express  
-- Dotenv  
-- Nodemon  
 
 ---
 
@@ -112,5 +94,3 @@ src/
 - `POST /matriculas` → Cria uma nova matrícula  
 - `PUT /matriculas/:id` → Atualiza uma matrícula  
 - `DELETE /matriculas/:id` → Remove uma matrícula  
-
----
