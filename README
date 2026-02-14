@@ -46,13 +46,14 @@ A API foi estruturada seguindo o padrão **MVC (Model-View-Controller)**:
 
 ## Estrutura do Projeto 📂
 
+```
 src/
 ├── controllers/
 ├── routes/
 ├── model/
 ├── middlewares/
 └── app.js
----
+```
 
 ## Como Executar o Projeto ▶️
 
