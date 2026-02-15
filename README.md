@@ -1,6 +1,6 @@
-#API EduTech – Gestão de Alunos, Cursos e Matrículas 📚
+# API EduTech – Gestão de Alunos, Cursos e Matrículas 📚
 
-##Sobre o Projeto 📌
+## Sobre o Projeto 📌
 
 Esta é uma API REST desenvolvida com **Node.js** e **Express**, simulando o funcionamento de uma plataforma educacional (EdTech).
 
@@ -14,7 +14,7 @@ O objetivo é aplicar conceitos de backend seguindo boas práticas de arquitetur
 
 ---
 
-##Por que EdTech? 🎯
+## Por que EdTech? 🎯
 
 O setor de tecnologia educacional é um dos que mais cresce no mercado atual.  
 Plataformas de ensino precisam de sistemas backend organizados, escaláveis e seguros para gerenciar usuários, cursos e inscrições.
@@ -23,7 +23,7 @@ Este projeto simula esse cenário.
 
 ---
 
-##Arquitetura 🏗
+## Arquitetura 🏗
 
 A API foi estruturada seguindo o padrão **MVC (Model-View-Controller)**:
 
@@ -34,7 +34,7 @@ A API foi estruturada seguindo o padrão **MVC (Model-View-Controller)**:
 
 ---
 
-##Tecnologias Utilizadas 🚀 
+## Tecnologias Utilizadas 🚀 
 
 - Node.js  
 - Express  
@@ -44,7 +44,7 @@ A API foi estruturada seguindo o padrão **MVC (Model-View-Controller)**:
 
 ---
 
-##Estrutura do Projeto 📂
+## Estrutura do Projeto 📂
 
 ```
 src/
@@ -55,7 +55,7 @@ src/
 └── app.js
 ```
 
-##Como Executar o Projeto ▶️
+## Como Executar o Projeto ▶️
 
 1. Clone o repositório
 2. Instale as dependências:npm install
@@ -66,9 +66,9 @@ TOKEN=defina_um_token_de_sua_preferencia.
 
 ---
 
-##Rotas da API 🔗
+## Rotas da API 🔗
 
-###Alunos 👧🏽
+### Alunos 👧🏽
 
 - `GET /alunos` → Lista todos os alunos  
 - `GET /alunos/:id` → Busca aluno por ID  
@@ -78,7 +78,7 @@ TOKEN=defina_um_token_de_sua_preferencia.
 
 ---
 
-###Cursos 🎓
+### Cursos 🎓
 
 - `GET /cursos` → Lista todos os cursos  
 - `GET /cursos/:id` → Busca curso por ID  
@@ -88,7 +88,7 @@ TOKEN=defina_um_token_de_sua_preferencia.
 
 ---
 
-###Matrículas 📝
+### Matrículas 📝
 
 - `GET /matriculas` → Lista todas as matrículas  
 - `GET /matriculas/:id` → Busca matrícula por ID  
